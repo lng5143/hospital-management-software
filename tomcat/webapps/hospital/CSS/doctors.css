@@ -1,0 +1,56 @@
+#add-doctor-button {
+    text-align: center;
+    background-color: #4a4e69;
+    color: white;
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#add-doctor-button:hover {
+    opacity: 80%;
+}
+
+#main {
+
+}
+
+#table-container {
+    /* height: 500px; */
+    
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 0px 20px;
+}
+
+thead {
+    height: 60px;
+    background-color: #22223B;
+    color: white
+}
+
+#edit-column {
+    width: 50px;
+}
+
+th {
+    text-align: start;
+}
+
+tbody tr {
+    height: 30px;
+}
+
+
+
+.edit-icon {
+    transform: scale(30%);
+}

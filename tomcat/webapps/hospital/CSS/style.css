@@ -1,5 +1,7 @@
+/* Home Page Section */
+
 * {
-    margin: 0xp;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Kumbh Sans';
@@ -17,33 +19,54 @@ body {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     background-color: #22223B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+#logo {
+    width: 100px;
+}
+
+#avatar {
+    width: 30px;
+    border-radius: 50%;
+}
+
+#avatar:hover {
+    border: 2px solid white;
 }
 
 #menu {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
     background-color: #4a4e69;
-    padding: 20px 10px;
 }
 
 .menu-item {
     /* padding: 10px; */
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 20px 30px;
     color: white;
+    text-decoration: none;
 }
 
-.menu-item img {
+.menu-item:hover {
+    background-color: #22223B;
+}
+
+/* .menu-item img {
     width: 30px;
     height: 30px;
     margin-right: 20px;
-}
+} */
 
 #main {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    background-color: #F2E9E4;
+    background-color: #e7ecef;
     padding: 50px;
 }
 
@@ -67,6 +90,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.chart-container a {
+    width: 100%;
+    text-decoration: none;
 }
 
 .chart-title {
@@ -93,6 +121,14 @@ body {
     border-radius: 10px;
     box-shadow: 0px 15px 15px -5px rgba(0, 0, 0, 0.3);
 }
+
+.nav-button:hover {
+    opacity: 80%;
+}
+
+/* Doctors Page Section  */
+
+
 
 @media all and (max-width: 560px) {
 

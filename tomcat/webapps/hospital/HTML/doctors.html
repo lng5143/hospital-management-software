@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tomcat/webapps/hospital/CSS/style.css">
+    <link rel="stylesheet" href="/tomcat/webapps/hospital/CSS/doctors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav-bar">
+        <a href="index.html">
+            <img id="logo" src="/tomcat/webapps/hospital/Images/logo.jpg"/>
+        </a>
+        <a href="">
+            <img id="avatar" src="/tomcat/webapps/hospital/Images/avatar.jpg"/>
+        </a>
+    </div>
+
+    <div id="menu">
+        <a class="menu-item" href="index.html">
+            Dashboard
+        </a>
+        <a class="menu-item" href="doctors.html">
+            Doctors
+        </a>
+        <a class="menu-item" href="patients.html">
+            Patients
+        </a>
+    </div>
+
+    <div id="main">
+        <div id="add-doctor-button">
+            Add Doctor
+        </div>
+        <!-- <div id="table-container"> -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor ID</th>
+                        <th>Doctor Name</th>
+                        <th>Department</th>
+                        <th id="edit-column"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Dr. Mark Alvey</td>
+                        <td>Internal Medicines</td>
+                        <td><img class="edit-icon" src="/tomcat/webapps/hospital/Images/icon-edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Dr. Glen Curtis</td>
+                        <td>Pediatrics</td>
+                        <td><img class="edit-icon" src="/tomcat/webapps/hospital/Images/icon-edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td> 
+                        <td>Dr. Debbie Lane</td>
+                        <td>Cardiology</td>
+                        <td><img class="edit-icon" src="/tomcat/webapps/hospital/Images/icon-edit.png"></td>
+                    </tr>
+                </tbody>
+            </table>
+        <!-- </div> -->
+    </div>
+</body>
+<script src="/tomcat/webapps/hospital/Javascript/script.js"></script>
+</html>
