@@ -1,0 +1,96 @@
+16-Jun-2023 17:36:54.549 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.9
+16-Jun-2023 17:36:54.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 9 2023 14:30:05 UTC
+16-Jun-2023 17:36:54.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.9.0
+16-Jun-2023 17:36:54.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+16-Jun-2023 17:36:54.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            12.6.1
+16-Jun-2023 17:36:54.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+16-Jun-2023 17:36:54.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+16-Jun-2023 17:36:54.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.6+9-LTS-190
+16-Jun-2023 17:36:54.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Jun-2023 17:36:54.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/macbook/Documents/Projects/hospital-management-software/tomcat
+16-Jun-2023 17:36:54.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/macbook/Documents/Projects/hospital-management-software/tomcat
+16-Jun-2023 17:36:54.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/macbook/Documents/Projects/hospital-management-software/tomcat/conf/logging.properties
+16-Jun-2023 17:36:54.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Jun-2023 17:36:54.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-Jun-2023 17:36:54.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Jun-2023 17:36:54.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Jun-2023 17:36:54.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Jun-2023 17:36:54.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+16-Jun-2023 17:36:54.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+16-Jun-2023 17:36:54.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+16-Jun-2023 17:36:54.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Jun-2023 17:36:54.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/macbook/Documents/Projects/hospital-management-software/tomcat
+16-Jun-2023 17:36:54.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/macbook/Documents/Projects/hospital-management-software/tomcat
+16-Jun-2023 17:36:54.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/macbook/Documents/Projects/hospital-management-software/tomcat/temp
+16-Jun-2023 17:36:54.631 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/macbook/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+16-Jun-2023 17:36:54.947 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+16-Jun-2023 17:36:55.005 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [683] milliseconds
+16-Jun-2023 17:36:55.046 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Jun-2023 17:36:55.046 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.9]
+16-Jun-2023 17:36:55.061 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/hospital_management]
+16-Jun-2023 17:36:55.513 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/hospital_management] has finished in [452] ms
+16-Jun-2023 17:36:55.513 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/docs]
+16-Jun-2023 17:36:55.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/docs] has finished in [38] ms
+16-Jun-2023 17:36:55.551 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/manager]
+16-Jun-2023 17:36:55.598 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/manager] has finished in [47] ms
+16-Jun-2023 17:36:55.598 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/examples]
+16-Jun-2023 17:36:55.918 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/examples] has finished in [320] ms
+16-Jun-2023 17:36:55.918 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/ROOT]
+16-Jun-2023 17:36:55.948 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/ROOT] has finished in [30] ms
+16-Jun-2023 17:36:55.949 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/host-manager]
+16-Jun-2023 17:36:55.986 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/host-manager] has finished in [36] ms
+16-Jun-2023 17:36:55.990 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+16-Jun-2023 17:36:56.012 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1006] milliseconds
+16-Jun-2023 17:46:15.532 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+16-Jun-2023 17:46:15.545 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+16-Jun-2023 17:46:15.593 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+16-Jun-2023 17:46:15.609 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+16-Jun-2023 17:48:54.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.9
+16-Jun-2023 17:48:54.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 9 2023 14:30:05 UTC
+16-Jun-2023 17:48:54.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.9.0
+16-Jun-2023 17:48:54.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+16-Jun-2023 17:48:54.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            12.6.1
+16-Jun-2023 17:48:54.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+16-Jun-2023 17:48:54.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+16-Jun-2023 17:48:54.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.6+9-LTS-190
+16-Jun-2023 17:48:54.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Jun-2023 17:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/macbook/Documents/Projects/hospital-management-software/tomcat
+16-Jun-2023 17:48:54.840 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/macbook/Documents/Projects/hospital-management-software/tomcat
+16-Jun-2023 17:48:54.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/macbook/Documents/Projects/hospital-management-software/tomcat/conf/logging.properties
+16-Jun-2023 17:48:54.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Jun-2023 17:48:54.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-Jun-2023 17:48:54.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Jun-2023 17:48:54.860 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Jun-2023 17:48:54.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Jun-2023 17:48:54.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+16-Jun-2023 17:48:54.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+16-Jun-2023 17:48:54.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+16-Jun-2023 17:48:54.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Jun-2023 17:48:54.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/macbook/Documents/Projects/hospital-management-software/tomcat
+16-Jun-2023 17:48:54.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/macbook/Documents/Projects/hospital-management-software/tomcat
+16-Jun-2023 17:48:54.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/macbook/Documents/Projects/hospital-management-software/tomcat/temp
+16-Jun-2023 17:48:54.886 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/macbook/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+16-Jun-2023 17:48:55.192 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+16-Jun-2023 17:48:55.227 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [660] milliseconds
+16-Jun-2023 17:48:55.275 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Jun-2023 17:48:55.276 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.9]
+16-Jun-2023 17:48:55.286 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/hospital_management]
+16-Jun-2023 17:48:55.600 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/hospital_management] has finished in [314] ms
+16-Jun-2023 17:48:55.601 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/docs]
+16-Jun-2023 17:48:55.631 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/docs] has finished in [30] ms
+16-Jun-2023 17:48:55.631 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/manager]
+16-Jun-2023 17:48:55.667 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/manager] has finished in [36] ms
+16-Jun-2023 17:48:55.668 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/examples]
+16-Jun-2023 17:48:55.963 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/examples] has finished in [296] ms
+16-Jun-2023 17:48:55.964 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/ROOT]
+16-Jun-2023 17:48:55.981 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/ROOT] has finished in [17] ms
+16-Jun-2023 17:48:55.981 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/host-manager]
+16-Jun-2023 17:48:56.005 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/host-manager] has finished in [24] ms
+16-Jun-2023 17:48:56.009 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+16-Jun-2023 17:48:56.024 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [796] milliseconds
+16-Jun-2023 17:50:16.614 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/hospital_management]
+16-Jun-2023 17:50:16.631 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/hospital]
+16-Jun-2023 17:50:16.660 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/hospital] has finished in [28] ms
+16-Jun-2023 17:50:26.674 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/hospital_management]
+16-Jun-2023 17:50:26.702 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/macbook/Documents/Projects/hospital-management-software/tomcat/webapps/hospital_management] has finished in [28] ms
+16-Jun-2023 17:51:07.289 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/hospital_management]
