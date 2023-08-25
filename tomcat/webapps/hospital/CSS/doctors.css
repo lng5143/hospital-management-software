@@ -1,4 +1,9 @@
-#add-doctor-button {
+body {
+    position: relative;
+}
+
+.add-doctor-button,
+.add-patient-button {
     text-align: center;
     background-color: #4a4e69;
     color: white;
@@ -6,14 +11,16 @@
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
-#add-doctor-button:hover {
+.add-doctor-button:hover,
+.add-patient-button:hover {
     opacity: 80%;
 }
 
 #main {
-
+    height: 800px;
 }
 
 #table-container {
@@ -25,10 +32,14 @@ table {
     width: 100%;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.2);
+    border: none;
 }
 
 th, td {
     padding: 0px 20px;
+    margin: 0;
+    border: none;
 }
 
 thead {
@@ -49,8 +60,182 @@ tbody tr {
     height: 30px;
 }
 
-
+#main tr {
+    cursor: pointer;
+}
+#main tr:hover {
+    background-color: lightgray;
+}
 
 .edit-icon {
     transform: scale(30%);
+    cursor: pointer;
+    position: relative;
+}
+
+.overlay {
+    background-color: black;
+    opacity: 70%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/* ======================
+Doctor Info section
+====================== */
+
+.doctor-info-container,
+.add-doctor-container,
+.edit-doctor-container {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+
+.doctor-info-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto;
+    display: none;
+}
+
+.doctor-info-text {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.doctor-photo {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.assigned-to-section {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    margin-top: 30px
+}
+
+.assigned-to-section p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* ======================
+Add Doctor Section
+====================== */
+.add-doctor-container,
+.add-patient-container {
+    display: none;
+}
+
+.add-doctor-container p,
+.edit-doctor-container p,
+.add-patient-container p,
+.edit-patient-container p {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+input[type="submit"] {
+    background-color: #4a4e69;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4a4e69;
+    color: white;
+    opacity: 80%;
+}
+
+sup {
+    color: red;
+}
+
+.edit-doctor-container {
+    display: none;
+}
+
+.add-response-message {
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+/* ======================
+Patient Info Section
+====================== */
+.floating-container {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.patient-info-container {
+    display: none;
+}
+
+.add-patient-container {
+    display: none;
+}
+
+.edit-patient-container {
+    display: none;
+}
+
+.patient-info {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.patient-info p {
+    margin-bottom: 10px;
+}
+
+.patient-info-left, 
+.patient-info-right {
+    width: 50%;
+}
+
+.doctor-section p {
+    font-size: 2rem;
+    font-weight: 700;
 }

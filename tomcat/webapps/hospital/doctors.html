@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/doctors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav-bar">
+        <a href="index.html">
+            <img id="logo" src="./Images/logo.jpg"/>
+        </a>
+        <a href="">
+            <img id="avatar" src="./Images/avatar.jpg"/>
+        </a>
+    </div>
+
+    <div id="menu">
+        <a class="menu-item" href="index.html">
+            Dashboard
+        </a>
+        <a class="menu-item" href="doctors.html">
+            Doctors
+        </a>
+        <a class="menu-item" href="patients.html">
+            Patients
+        </a>
+    </div>
+
+    <div id="main">
+        <div class="add-doctor-button">
+            Add Doctor
+        </div>
+        <!-- <div id="table-container"> -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor ID</th>
+                        <th>Doctor Name</th>
+                        <th>Department</th>
+                        <th id="edit-column"></th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>Dr. Mark Alvey</td>
+                        <td>Internal Medicines</td>
+                        <td><img class="edit-icon" src="./Images/icon-edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Dr. Glen Curtis</td>
+                        <td>Pediatrics</td>
+                        <td><img class="edit-icon" src="./Images/icon-edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td> 
+                        <td>Dr. Debbie Lane</td>
+                        <td>Cardiology</td>
+                        <td><img class="edit-icon" src="./Images/icon-edit.png"></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        <!-- </div> -->
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="floating-container doctor-info-container">
+        <div class="doctor-info-text">
+            <div class="name doctor-name">
+                Dr. Mark Alvey
+            </div>
+            <div class="department-name">Internal Medicines</div>
+        </div>
+        <img class="doctor-photo" src="./Images/photo-mark-alvey.jpg" alt="">
+        <div class="assigned-to-section">
+            <p>Assigned To</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient ID</th>
+                        <th>Patient Name</th>
+                        <th>Diagnosis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Uwain Merrick</td>
+                        <td>Common Cold</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="floating-container add-doctor-container">
+        <p>Add Doctor</p>
+        <form method="get" action="addDoctor">
+            <label>Doctor Name<sup>*</sup></label><br>
+            <input class="doctor-name-input" type="text" name="doctor-name" placeholder="Enter doctor name..." />
+            <br><br>
+            <label>Department</label><br>
+            <select class="department-input" name="doctor-department">
+                <option value="1">Internal Medicines</option>
+                <option value="2">Pediatrics</option>
+                <option value="3">Cardiology</option>
+                <option value="4">Gastroenterology</option>
+                <option value="5">Gynecology</option>
+                <option value="6">Neurology</option>
+                <option value="7">Opthalmology</option>
+                <option value="8">Dermatology</option>
+                <option value="9">Oncology</option>
+            </select>
+            <br><br>
+            <label for="file">Upload photo:</label><br>
+            <input class="doctor-photo-input" type="file" name="doctor-photo" />
+            <br><br>
+            <input class="add-doctor-submit" type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div class="floating-container edit-doctor-container">
+        <p>Edit Doctor</p>
+        <form method="get" action="DoctorServlet">
+            <label>Doctor Name</label>
+            <input type="text" name="doctor-name" placeholder="Enter doctor name..." />
+            <br><br>
+            <label>Department</label>
+            <input type="text" name="doctor-department" placeholder="Enter department..." />
+            <br><br>
+            <label for="file">Upload photo:</label>
+            <input type="file" name="doctor-photo" />
+            <br><br>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+</body>
+<script src="./Javascript/script.js"></script>
+<script src="./Javascript/doctorsScript.js"></script>
+</html>

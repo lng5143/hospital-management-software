@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/doctors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav-bar">
+        <a href="index.html">
+            <img id="logo" src="./Images/logo.jpg"/>
+        </a>
+        <a href="">
+            <img id="avatar" src="./Images/avatar.jpg"/>
+        </a>
+    </div>
+
+    <div id="menu">
+        <a class="menu-item" href="index.html">
+            Dashboard
+        </a>
+        <a class="menu-item" href="doctors.html">
+            Doctors
+        </a>
+        <a class="menu-item" href="patients.html">
+            Patients
+        </a>
+    </div>
+
+    <div id="main">
+        <div class="add-patient-button">
+            Add Patient
+        </div>
+        <!-- <div id="table-container"> -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient ID</th>
+                        <th>Patient Name</th>
+                        <th>Date of Hospitalization</th>
+                        <th>Date of Discharge</th>
+                        <th>Diagnosis</th>
+                        <th>Doctor</th>
+                        <th id="edit-column"></th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>Uwain Merrick</td>
+                        <td>2023-05-19</td>
+                        <td>2023-05-21</td>
+                        <td>Common Cold</td>
+                        <td>Dr. Mark Alvey</td>
+                        <td><img class="edit-icon" src="./Images/icon-edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Dominic Holland</td>
+                        <td>2023-05-20</td>
+                        <td>2023-05-22</td>
+                        <td>Flu</td>
+                        <td>Dr. Glen Curtis</td>
+                        <td><img class="edit-icon" src="./Images/icon-edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td> 
+                        <td>Melvin Mallin</td>
+                        <td>2023-05-21</td>
+                        <td>2023-05-23</td>
+                        <td>Asthma</td>
+                        <td>Dr. Debbie Lane</td>
+                        <td><img class="edit-icon" src="./Images/icon-edit.png"></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        <!-- </div> -->
+    </div>
+
+    <div class="overlay"></div>
+    <div class="floating-container patient-info-container">
+        <div class="name patient-name">
+            Uwain Merrick
+        </div>
+        <div class="patient-info">
+            <div class="patient-info-left">
+                <p>Patient ID: 1</p>
+                <p>Date of Hospitalization: 2023-05-19</p>
+                <p>Date of Discharge: 2023-05-21</p>
+            </div>
+            <div class="patient-info-right">
+                <p>Symptoms: </p>
+                <p>Diagnosis: </p>
+                <p>Treatment Course: </p>
+            </div>
+        </div>
+        <div class="doctor-section">
+            <p>Doctor </p>
+        </div>
+    </div>
+
+    <div class="floating-container add-patient-container">
+        <p>Add Patient</p>
+        <form>
+            <label>Patient Name</label>
+            <input type="text" name="patient-name" placeholder="Enter patient name..." />
+            <br><br>
+            <label>Date of Hospitalization</label>
+            <input type="date" name="date-of-hospitalization" />
+            <br><br>
+            <label>Date of Discharge</label>
+            <input type="date" name="date-of-discharge" />
+            <br><br>
+            <label>Assigned Doctor</label>
+            <!-- <input type="date" name="date-of-discharge" /> -->
+            <select name="assigned-doctor">
+                <option value="1">Dr. Mark Alvey</option>
+                <option value="2">Dr. Glen Curtis</option>
+                <option value="3">Dr. Debbie Lane</option>
+            </select>
+            <br><br>
+            <label>Symptoms</label>
+            <input type="text" name="symptoms" />
+            <br><br>
+            <label>Diagnosis</label>
+            <input type="text" name="diagnosis" />
+            <br><br>
+            <label>Treatment Course</label>
+            <input type="text" name="treatment-course" />
+            <br><br>
+            <input class="add-patient-submit" type="submit" value="Submit" />
+        </form>
+        <div class="add-response-message"></div>
+    </div>
+
+    <div class="floating-container edit-patient-container">
+        <p>Edit Patient</p>
+        <form method="post" action="PatientServlet">
+            <label>Patient Name<sup>*</sup></label>
+            <input type="text" name="patient-name" placeholder="Enter patient name..." />
+            <br><br>
+            <label>Date of Hospitalization</label>
+            <input type="date" name="date-of-hospitalization" />
+            <br><br>
+            <label>Date of Discharge</label>
+            <input type="date" name="date-of-discharge" />
+            <br><br>
+            <label>Assigned Doctor</label>
+            <!-- <input type="date" name="date-of-discharge" /> -->
+            <select name="assigned-doctor">
+                <option value="Dr. Mark Alvey">Dr. Mark Alvey</option>
+                <option value="Dr. Glen Curtis">Dr. Glen Curtis</option>
+                <option value="Dr. Debbie Lane">Dr. Debbie Lane</option>
+            </select>
+            <br><br>
+            <label>Symptoms</label>
+            <input type="text" name="symptoms" />
+            <br><br>
+            <label>Diagnosis</label>
+            <input type="text" name="diagnosis" />
+            <br><br>
+            <label>Treatment Course</label>
+            <input type="text" name="treatment-course" />
+            <br><br>
+            <input class="edit-patient-submit" type="submit" value="Submit" />
+        </form>
+    </div>
+
+</body>
+<script src="./Javascript/script.js"></script>
+<script src="./Javascript/patientScript.js"></script>
+</html>
